@@ -114,72 +114,80 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
   border: 1px solid red;
   width: 100%;
-  margin: auto;
   margin-top: 40px;
 }
-.main .leftMenu {
+.main .innerMain {
+  display: flex;
+  width: 83%;
+  margin: auto;
+}
+.main .innerMain .leftMenu {
   width: 180px;
   position: fixed;
   top: 40px;
-  left: 9%;
   padding-top: 20px;
   border: 1px solid black;
 }
-.main .leftMenu .name {
+.main .innerMain .leftMenu .name {
   display: flex;
   padding-bottom: 15px;
   padding-left: 5px;
 }
-.main .leftMenu .name img {
+.main .innerMain .leftMenu .name img {
   height: 20px;
   border-radius: 15px;
 }
-.main .leftMenu .name p {
+.main .innerMain .leftMenu .name p {
   padding-left: 10px;
 }
-.main .leftMenu .links {
+.main .innerMain .leftMenu .links {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.main .leftMenu p {
+.main .innerMain .leftMenu p {
   padding-left: 10px;
   font-size: 13px;
 }
-.main .leftMenu a img {
+.main .innerMain .leftMenu a img {
   height: 25px;
   padding-right: 10px;
   padding-bottom: 4px;
 }
-.main .leftMenu a:hover {
+.main .innerMain .leftMenu a:hover {
   background-color: white;
   border: 0.5px solid lightgray;
 }
-.main .leftMenu .shortcuts {
+.main .innerMain .leftMenu .shortcuts {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 10px 0;
 }
-.main .leftMenu .explore {
+.main .innerMain .leftMenu .explore {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.main .mainSection {
+.main .innerMain .mainSection {
   display: flex;
+  width: 820px;
+  margin: auto;
+  border: 1px solid red;
 }
-.main .mainSection .feed .feedFiller {
+.main .innerMain .mainSection .feed .feedFiller {
   width: 500px;
   height: 200px;
   background-color: limegreen;
 }
-.main .mainSection .stories .storyFiller {
+.main .innerMain .mainSection .stories {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .innerMain .mainSection .stories .storyFiller {
   width: 310px;
   height: 500px;
   background-color: pink;

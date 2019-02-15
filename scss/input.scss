@@ -114,78 +114,84 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
   border: 1px solid red;
   width: 100%;
-  margin: auto;
   margin-top: 40px;
-  .leftMenu {
-    width: 180px;
-    position: fixed;
-    top: 40px;
-    left: 9%;
-    padding-top: 20px;
-    border: 1px solid black;
-    .name {
-      display: flex;
-      padding-bottom: 15px;
-      padding-left: 5px;
-      img {
-        height: 20px;
-        border-radius: 15px;
+  .innerMain {
+    display: flex;
+    width: 83%;
+    margin: auto;
+    .leftMenu {
+      width: 180px;
+      position: fixed;
+      top: 40px;
+      padding-top: 20px;
+      border: 1px solid black;
+      .name {
+        display: flex;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        img {
+          height: 20px;
+          border-radius: 15px;
+        }
+        p {
+          padding-left: 10px;
+        }
+      }
+      .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
       }
       p {
         padding-left: 10px;
+        font-size: 13px;
+      }
+      a {
+        img {
+          height: 25px;
+          padding-right: 10px;
+          padding-bottom: 4px;
+        }
+      }
+      a:hover {
+        background-color: white;
+        border: 0.5px solid lightgray;
+      }
+      .shortcuts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+      }
+      .explore {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
       }
     }
-    .links {
-      width: 100%;
+    .mainSection {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    p {
-      padding-left: 10px;
-      font-size: 13px;
-    }
-    a {
-      img {
-        height: 25px;
-        padding-right: 10px;
-        padding-bottom: 4px;
+      width: 820px;
+      margin: auto;
+      border: 1px solid red;
+      .feed {
+        .feedFiller {
+          width: 500px;
+          height: 200px;
+          background-color: limegreen;
+        }
       }
-    }
-    a:hover {
-      background-color: white;
-      border: 0.5px solid lightgray;
-    }
-    .shortcuts {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin: 10px 0;
-    }
-    .explore {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  .mainSection {
-    display: flex;
-    .feed {
-      .feedFiller {
-        width: 500px;
-        height: 200px;
-        background-color: limegreen;
-      }
-    }
-    .stories {
-      .storyFiller {
-        width: 310px;
-        height: 500px;
-        background-color: pink;
+      .stories {
+        display: flex;
+        justify-content: flex-end;
+        .storyFiller {
+          width: 310px;
+          height: 500px;
+          background-color: pink;
+        }
       }
     }
   }
