@@ -2,6 +2,63 @@
   width: 100%;
   background-color: #4267b2;
   height: 40px;
+  display: flex;
+}
+.banner .sizeBanner {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+.banner .sizeBanner .leftBanner {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner .sizeBanner .leftBanner img {
+  height: 35px;
+}
+.banner .sizeBanner .leftBanner input {
+  height: 25px;
+  width: 400px;
+  display: flex;
+}
+.banner .sizeBanner .rightBanner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner .sizeBanner .rightBanner img {
+  height: 35px;
+}
+.banner .sizeBanner .rightBanner p {
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid black;
+}
+.banner .sizeBanner .rightBanner .profileID {
+  display: flex;
+  align-items: center;
+}
+.banner .sizeBanner .rightBanner .profileID p {
+  color: white;
+}
+.banner .sizeBanner .rightBanner .profileID img {
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.banner .sizeBanner .rightBanner .logos {
+  display: flex;
+}
+.banner .sizeBanner .rightBanner .logos img {
+  height: 25px;
+}
+.banner .sizeBanner .rightBanner .help img {
+  height: 25px;
+  margin-bottom: 3px;
 }
 
 /*# sourceMappingURL=input.css.map */
