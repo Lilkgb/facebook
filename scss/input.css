@@ -174,20 +174,24 @@ body {
 }
 .main .innerMain .mainSection {
   display: flex;
+  justify-content: space-between;
   width: 820px;
   margin: auto;
   border: 1px solid red;
 }
+.main .innerMain .mainSection .feed {
+  display: flex;
+  flex-direction: column;
+}
 .main .innerMain .mainSection .feed .feedFiller {
   width: 500px;
-  height: 200px;
+  height: 700px;
   background-color: limegreen;
 }
-.main .innerMain .mainSection .stories {
-  display: flex;
-  justify-content: flex-end;
-}
 .main .innerMain .mainSection .stories .storyFiller {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
   width: 310px;
   height: 500px;
   background-color: pink;

@@ -174,20 +174,24 @@ body {
     }
     .mainSection {
       display: flex;
+      justify-content: space-between;
       width: 820px;
       margin: auto;
       border: 1px solid red;
       .feed {
+        display: flex;
+        flex-direction: column;
         .feedFiller {
           width: 500px;
-          height: 200px;
+          height: 700px;
           background-color: limegreen;
         }
       }
       .stories {
-        display: flex;
-        justify-content: flex-end;
         .storyFiller {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 40px;
           width: 310px;
           height: 500px;
           background-color: pink;
