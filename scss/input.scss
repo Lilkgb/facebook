@@ -145,7 +145,6 @@ body {
       position: fixed;
       top: 40px;
       padding-top: 20px;
-      border: 1px solid black;
       .name {
         display: flex;
         padding-bottom: 15px;
@@ -194,7 +193,7 @@ body {
     .mainSection {
       display: flex;
       justify-content: space-between;
-      width: 820px;
+      width: 840px;
       margin: auto;
       .makePost {
         display: flex;
@@ -259,6 +258,7 @@ body {
       .feed {
         width: 500px;
         border: $border;
+        border-radius: 5px;
         background-color: white;
         .inputPost {
           display: flex;
@@ -356,7 +356,6 @@ body {
         display: flex;
         flex-direction: column;
         padding-bottom: 5px;
-        border-bottom: $border;
         .comments {
           display: flex;
           margin: 10px 10px;
@@ -394,6 +393,44 @@ body {
             cursor: pointer;
             text-decoration: underline;
           }
+        }
+      }
+      .addComment {
+        margin: 10px 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          height: 45px;
+          border-radius: 50px;
+          margin-right: 10px;
+        }
+        input {
+          width: 60%;
+          padding-left: 10px;
+          background-color: $lightergray;
+          border-top: $border;
+          border-left: $border;
+          border-bottom: $border;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          height: 40px;
+        }
+        i {
+          margin-right: 5px;
+          margin-left: 8px;
+        }
+        .commentTags {
+          display: flex;
+          padding-right: 10px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border-top: $border;
+          border-bottom: $border;
+          border-right: $border;
+          align-items: center;
+          background-color: $lightergray;
+          height: 40px;
         }
       }
       .stories {
