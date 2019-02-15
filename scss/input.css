@@ -8,7 +8,7 @@ body {
   height: 40px;
   flex-wrap: wrap;
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 .banner .sizeBanner {
@@ -27,11 +27,6 @@ body {
 .banner .sizeBanner .leftBanner img {
   height: 35px;
 }
-.banner .sizeBanner .leftBanner img:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-}
 .banner .sizeBanner .leftBanner input {
   height: 25px;
   width: 400px;
@@ -39,6 +34,10 @@ body {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   border: none;
+  padding-left: 5px;
+}
+.banner .sizeBanner .leftBanner button:hover {
+  background-color: lightgray;
 }
 .banner .sizeBanner .leftBanner button {
   height: 25px;
@@ -51,6 +50,9 @@ body {
 .banner .sizeBanner .leftBanner button img {
   height: 15px;
   margin-bottom: 5px;
+}
+.banner .sizeBanner .leftBanner img:hover {
+  cursor: pointer;
 }
 .banner .sizeBanner .rightBanner {
   display: flex;
@@ -116,7 +118,6 @@ body {
 .main {
   border: 1px solid red;
   width: 100%;
-  margin-top: 40px;
 }
 .main .innerMain {
   display: flex;
@@ -183,10 +184,78 @@ body {
   display: flex;
   flex-direction: column;
 }
-.main .innerMain .mainSection .feed .feedFiller {
+.main .innerMain .mainSection .feed .post {
   width: 500px;
-  height: 700px;
-  background-color: limegreen;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.main .innerMain .mainSection .feed .post .creatPost {
+  padding-left: 10px;
+  background-color: #f5f6f7;
+  border-bottom: 1px solid lightgray;
+}
+.main .innerMain .mainSection .feed .post .inputPost {
+  display: flex;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.main .innerMain .mainSection .feed .post .inputPost img {
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.main .innerMain .mainSection .feed .post .inputPost input {
+  width: 100%;
+  border: none;
+}
+.main .innerMain .mainSection .feed .tags {
+  display: flex;
+  justify-content: space-around;
+}
+.main .innerMain .mainSection .feed .tags .photo {
+  background-color: #f5f6f7;
+  border-radius: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main .innerMain .mainSection .feed .tags .photo:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.main .innerMain .mainSection .feed .tags .tagFriends {
+  background-color: #f5f6f7;
+  border-radius: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main .innerMain .mainSection .feed .tags .tagFriends:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.main .innerMain .mainSection .feed .tags .feeling {
+  background-color: #f5f6f7;
+  border-radius: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main .innerMain .mainSection .feed .tags .feeling:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.main .innerMain .mainSection .feed .tags img {
+  height: 25px;
 }
 .main .innerMain .mainSection .stories .storyFiller {
   position: -webkit-sticky;
