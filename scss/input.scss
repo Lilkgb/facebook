@@ -11,12 +11,17 @@
 $blue: #4267b2;
 $lightgray: #f5f6f7;
 
+body {
+  background-color: $lightgray;
+}
 .banner {
   width: 100%;
-  position: fixed;
   background-color: $blue;
   height: 40px;
+  flex-wrap: wrap;
   display: flex;
+  position: fixed;
+  top: 0;
   .sizeBanner {
     display: flex;
     width: 90%;
@@ -109,12 +114,10 @@ $lightgray: #f5f6f7;
 }
 
 .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .filler {
-    width: 49%;
-    height: 500px;
-    background-color: red;
+  border: 1px solid red;
+  width: 100%;
+  margin-top: 40px;
+  .leftMenu {
+    
   }
 }
