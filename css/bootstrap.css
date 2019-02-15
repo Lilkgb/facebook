@@ -152,15 +152,10 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: #007bff;
+a{
   text-decoration: none;
-  background-color: transparent;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: black;
+  padding-left: 5px;
 }
 
 a:not([href]):not([tabindex]) {
