@@ -1,12 +1,13 @@
 .banner {
   width: 100%;
+  position: fixed;
   background-color: #4267b2;
   height: 40px;
   display: flex;
 }
 .banner .sizeBanner {
   display: flex;
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: auto;
   justify-content: space-between;
@@ -20,10 +21,30 @@
 .banner .sizeBanner .leftBanner img {
   height: 35px;
 }
+.banner .sizeBanner .leftBanner img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
 .banner .sizeBanner .leftBanner input {
   height: 25px;
   width: 400px;
   display: flex;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: none;
+}
+.banner .sizeBanner .leftBanner button {
+  height: 25px;
+  width: 50px;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #f5f6f7;
+}
+.banner .sizeBanner .leftBanner button img {
+  height: 15px;
+  margin-bottom: 5px;
 }
 .banner .sizeBanner .rightBanner {
   display: flex;
@@ -39,6 +60,16 @@
   padding-left: 10px;
   border-right: 1px solid black;
 }
+.banner .sizeBanner .rightBanner .hover:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.banner .sizeBanner .rightBanner .profileID:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
 .banner .sizeBanner .rightBanner .profileID {
   display: flex;
   align-items: center;
@@ -47,18 +78,44 @@
   color: white;
 }
 .banner .sizeBanner .rightBanner .profileID img {
+  height: 30px;
   border-radius: 15px;
-  margin-right: 5px;
 }
 .banner .sizeBanner .rightBanner .logos {
+  border-right: 1px solid black;
+  padding-right: 10px;
   display: flex;
+  margin-left: 10px;
 }
 .banner .sizeBanner .rightBanner .logos img {
   height: 25px;
+  margin-left: 10px;
+}
+.banner .sizeBanner .rightBanner .logos img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .banner .sizeBanner .rightBanner .help img {
   height: 25px;
   margin-bottom: 3px;
+  margin-left: 10px;
+}
+.banner .sizeBanner .rightBanner .help img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .filler {
+  width: 49%;
+  height: 500px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=input.css.map */
