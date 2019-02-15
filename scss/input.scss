@@ -135,6 +135,7 @@ body {
 
 .main {
   width: 100%;
+  margin-bottom: 200px;
   .innerMain {
     display: flex;
     width: 83%;
@@ -291,6 +292,7 @@ body {
           margin: 10px 10px;
           border-bottom: $border;
           padding-bottom: 10px;
+          color: gray;
           .likeNumber {
             display: flex;
             align-items: center;
@@ -320,6 +322,7 @@ body {
           width: 100%;
           border-bottom: $border;
           color: gray;
+          padding-bottom: 10px;
           p {
             margin-left: 10px;
           }
@@ -346,6 +349,50 @@ body {
           .commentButton:hover {
             background-color: $lightgray;
             border-radius: 5px;
+          }
+        }
+      }
+      .commentWrap {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+        border-bottom: $border;
+        .comments {
+          display: flex;
+          margin: 10px 10px;
+          img {
+            height: 45px;
+            border-radius: 50px;
+            margin-right: 10px;
+          }
+          img:hover {
+            cursor: pointer;
+          }
+          .userName {
+            color: blue;
+          }
+          .userName:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          p {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: $lightergray;
+            border-radius: 50px;
+          }
+        }
+        .tag {
+          display: flex;
+          margin-left: 60px;
+          p {
+            margin-left: 10px;
+            color: blue;
+            margin-top: -10px;
+          }
+          p:hover {
+            cursor: pointer;
+            text-decoration: underline;
           }
         }
       }
