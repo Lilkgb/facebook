@@ -25,6 +25,7 @@
 $blue: #4267b2;
 $lightgray: #f5f6f7;
 $border: 1px solid lightgray;
+$lightergray: #e8eaeb;
 
 body {
   background-color: $lightgray;
@@ -133,7 +134,6 @@ body {
 }
 
 .main {
-  border: 1px solid red;
   width: 100%;
   .innerMain {
     display: flex;
@@ -195,8 +195,7 @@ body {
       justify-content: space-between;
       width: 820px;
       margin: auto;
-      border: 1px solid red;
-      .feed {
+      .makePost {
         display: flex;
         flex-direction: column;
         .post {
@@ -205,6 +204,7 @@ body {
           margin-top: 10px;
           border-radius: 5px;
           border: $border;
+          margin-bottom: 10px;
           .creatPost {
             padding-left: 10px;
             background-color: $lightgray;
@@ -252,6 +252,100 @@ body {
           }
           img {
             height: 25px;
+          }
+        }
+      }
+      .feed {
+        width: 500px;
+        border: $border;
+        background-color: white;
+        .inputPost {
+          display: flex;
+          align-items: center;
+          margin: 10px;
+          img {
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 10px;
+          }
+          .tiny {
+            font-size: 10px;
+          }
+        }
+        .description {
+          margin: auto;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .image {
+          img {
+            width: 497px;
+            margin-top: 10px;
+            border-bottom: $border;
+            border-top: $border;
+          }
+        }
+        .likes {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 10px;
+          border-bottom: $border;
+          padding-bottom: 10px;
+          .likeNumber {
+            display: flex;
+            align-items: center;
+            img {
+              height: 20px;
+            }
+            .numberOfLikes {
+              margin-left: 10px;
+            }
+          }
+          .comment {
+            display: flex;
+            p {
+              margin-left: 10px;
+            }
+            .c:hover {
+              cursor: pointer;
+            }
+            .s:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .likeComment {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          border-bottom: $border;
+          color: gray;
+          p {
+            margin-left: 10px;
+          }
+          .likeButton {
+            width: 49%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
+            padding-top: 5px;
+          }
+          .likeButton:hover {
+            background-color: $lightgray;
+            border-radius: 5px;
+          }
+          .commentButton {
+            width: 49%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
+            padding-top: 5px;
+          }
+          .commentButton:hover {
+            background-color: $lightgray;
+            border-radius: 5px;
           }
         }
       }

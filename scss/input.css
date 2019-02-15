@@ -116,7 +116,6 @@ body {
 }
 
 .main {
-  border: 1px solid red;
   width: 100%;
 }
 .main .innerMain {
@@ -178,25 +177,25 @@ body {
   justify-content: space-between;
   width: 820px;
   margin: auto;
-  border: 1px solid red;
 }
-.main .innerMain .mainSection .feed {
+.main .innerMain .mainSection .makePost {
   display: flex;
   flex-direction: column;
 }
-.main .innerMain .mainSection .feed .post {
+.main .innerMain .mainSection .makePost .post {
   width: 500px;
   background-color: white;
   margin-top: 10px;
   border-radius: 5px;
   border: 1px solid lightgray;
+  margin-bottom: 10px;
 }
-.main .innerMain .mainSection .feed .post .creatPost {
+.main .innerMain .mainSection .makePost .post .creatPost {
   padding-left: 10px;
   background-color: #f5f6f7;
   border-bottom: 1px solid lightgray;
 }
-.main .innerMain .mainSection .feed .post .inputPost {
+.main .innerMain .mainSection .makePost .post .inputPost {
   display: flex;
   background-color: white;
   margin-left: 10px;
@@ -205,20 +204,20 @@ body {
   margin-right: 10px;
   border-bottom: 1px solid lightgray;
 }
-.main .innerMain .mainSection .feed .post .inputPost img {
+.main .innerMain .mainSection .makePost .post .inputPost img {
   height: 50px;
   border-radius: 25px;
   margin-right: 10px;
 }
-.main .innerMain .mainSection .feed .post .inputPost input {
+.main .innerMain .mainSection .makePost .post .inputPost input {
   width: 100%;
   border: none;
 }
-.main .innerMain .mainSection .feed .tags {
+.main .innerMain .mainSection .makePost .tags {
   display: flex;
   justify-content: space-around;
 }
-.main .innerMain .mainSection .feed .tags .photo {
+.main .innerMain .mainSection .makePost .tags .photo {
   background-color: #f5f6f7;
   border-radius: 20px;
   padding-right: 10px;
@@ -226,11 +225,11 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.main .innerMain .mainSection .feed .tags .photo:hover {
+.main .innerMain .mainSection .makePost .tags .photo:hover {
   background-color: lightgray;
   cursor: pointer;
 }
-.main .innerMain .mainSection .feed .tags .tagFriends {
+.main .innerMain .mainSection .makePost .tags .tagFriends {
   background-color: #f5f6f7;
   border-radius: 20px;
   padding-right: 10px;
@@ -238,11 +237,11 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.main .innerMain .mainSection .feed .tags .tagFriends:hover {
+.main .innerMain .mainSection .makePost .tags .tagFriends:hover {
   background-color: lightgray;
   cursor: pointer;
 }
-.main .innerMain .mainSection .feed .tags .feeling {
+.main .innerMain .mainSection .makePost .tags .feeling {
   background-color: #f5f6f7;
   border-radius: 20px;
   padding-right: 10px;
@@ -250,12 +249,104 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.main .innerMain .mainSection .feed .tags .feeling:hover {
+.main .innerMain .mainSection .makePost .tags .feeling:hover {
   background-color: lightgray;
   cursor: pointer;
 }
-.main .innerMain .mainSection .feed .tags img {
+.main .innerMain .mainSection .makePost .tags img {
   height: 25px;
+}
+.main .innerMain .mainSection .feed {
+  width: 500px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+.main .innerMain .mainSection .feed .inputPost {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.main .innerMain .mainSection .feed .inputPost img {
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.main .innerMain .mainSection .feed .inputPost .tiny {
+  font-size: 10px;
+}
+.main .innerMain .mainSection .feed .description {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main .innerMain .mainSection .feed .image img {
+  width: 497px;
+  margin-top: 10px;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+.main .innerMain .mainSection .feed .likes {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+.main .innerMain .mainSection .feed .likes .likeNumber {
+  display: flex;
+  align-items: center;
+}
+.main .innerMain .mainSection .feed .likes .likeNumber img {
+  height: 20px;
+}
+.main .innerMain .mainSection .feed .likes .likeNumber .numberOfLikes {
+  margin-left: 10px;
+}
+.main .innerMain .mainSection .feed .likes .comment {
+  display: flex;
+}
+.main .innerMain .mainSection .feed .likes .comment p {
+  margin-left: 10px;
+}
+.main .innerMain .mainSection .feed .likes .comment .c:hover {
+  cursor: pointer;
+}
+.main .innerMain .mainSection .feed .likes .comment .s:hover {
+  cursor: pointer;
+}
+.main .innerMain .mainSection .feed .likeComment {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  color: gray;
+}
+.main .innerMain .mainSection .feed .likeComment p {
+  margin-left: 10px;
+}
+.main .innerMain .mainSection .feed .likeComment .likeButton {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.main .innerMain .mainSection .feed .likeComment .likeButton:hover {
+  background-color: #f5f6f7;
+  border-radius: 5px;
+}
+.main .innerMain .mainSection .feed .likeComment .commentButton {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.main .innerMain .mainSection .feed .likeComment .commentButton:hover {
+  background-color: #f5f6f7;
+  border-radius: 5px;
 }
 .main .innerMain .mainSection .stories .storyFiller {
   position: -webkit-sticky;
