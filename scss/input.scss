@@ -478,6 +478,14 @@ body {
     .peopleFiller {
     }
     .searchPeople {
+      width: 100%;
+      .fa-search {
+        border-top: $border;
+        border-bottom: $border;
+      }
+      input {
+        border: none;
+      }
     }
   }
 }

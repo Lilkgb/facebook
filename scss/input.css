@@ -471,5 +471,15 @@ body {
   top: 40px;
   height: 94%;
 }
+.main .peopleOnline .searchPeople {
+  width: 100%;
+}
+.main .peopleOnline .searchPeople .fa-search {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.main .peopleOnline .searchPeople input {
+  border: none;
+}
 
 /*# sourceMappingURL=input.css.map */
