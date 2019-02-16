@@ -413,6 +413,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 .main .innerMain .mainSection .feed .addComment img {
   height: 45px;
@@ -420,28 +421,24 @@ body {
   margin-right: 10px;
 }
 .main .innerMain .mainSection .feed .addComment input {
-  width: 65%;
   padding-left: 10px;
-  background-color: #e8eaeb;
-  border-top: 1px solid lightgray;
-  border-left: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
   height: 40px;
+  width: 75%;
+  background-color: #f5f6f7;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .main .innerMain .mainSection .feed .addComment img:hover {
   cursor: pointer;
 }
 .main .innerMain .mainSection .feed .addComment .commentTags {
   display: flex;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  justify-content: flex-end;
+  width: 80%;
   align-items: center;
-  background-color: #e8eaeb;
+  background-color: #f5f6f7;
+  border-radius: 15px;
   height: 40px;
 }
 .main .innerMain .mainSection .feed .addComment .commentTags img {

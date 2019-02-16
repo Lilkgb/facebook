@@ -415,34 +415,31 @@ body {
           width: 100%;
           display: flex;
           align-items: center;
+          margin-right: 20px;
           img {
             height: 45px;
             border-radius: 50px;
             margin-right: 10px;
           }
           input {
-            width: 65%;
             padding-left: 10px;
-            background-color: $lightergray;
-            border-top: $border;
-            border-left: $border;
-            border-bottom: $border;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
             height: 40px;
+            width: 75%;
+            background-color: $lightgray;
+            border: none;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
           }
           img:hover {
             cursor: pointer;
           }
           .commentTags {
             display: flex;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-top: $border;
-            border-bottom: $border;
-            border-right: $border;
+            justify-content: flex-end;
+            width: 80%;
             align-items: center;
-            background-color: $lightergray;
+            background-color: $lightgray;
+            border-radius: 15px;
             height: 40px;
             img {
               border-radius: 0;
