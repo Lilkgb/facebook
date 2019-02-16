@@ -141,7 +141,7 @@ body {
   width: 100%;
   .innerMain {
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: auto;
     .leftMenu {
       width: 10%;
@@ -197,7 +197,7 @@ body {
     }
     .mainSection {
       display: flex;
-      width: 90%;
+      width: 80%;
       margin: auto;
       margin-left: 20px;
       .makePost {
@@ -366,35 +366,35 @@ body {
             cursor: pointer;
           }
         }
-      }
-      .commentWrap {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 5px;
-        .comments {
+        .commentWrap {
           display: flex;
-          margin: 10px 10px;
-          img {
-            height: 45px;
-            width: 45px;
-            border-radius: 50px;
-            margin-right: 10px;
-          }
-          img:hover {
-            cursor: pointer;
-          }
-          .userName {
-            color: blue;
-          }
-          .userName:hover {
-            text-decoration: underline;
-            cursor: pointer;
-          }
-          p {
-            padding-left: 20px;
-            padding-right: 20px;
-            background-color: $lightergray;
-            border-radius: 50px;
+          flex-direction: column;
+          padding-bottom: 5px;
+          .comments {
+            display: flex;
+            margin: 10px 10px;
+            img {
+              height: 45px;
+              width: 45px;
+              border-radius: 50px;
+              margin-right: 10px;
+            }
+            img:hover {
+              cursor: pointer;
+            }
+            .userName {
+              color: blue;
+            }
+            .userName:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+            p {
+              padding-left: 20px;
+              padding-right: 20px;
+              background-color: $lightergray;
+              border-radius: 50px;
+            }
           }
         }
         .tag {
@@ -410,55 +410,77 @@ body {
             text-decoration: underline;
           }
         }
-      }
-      .addComment {
-        margin: 10px 10px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        img {
-          height: 45px;
-          border-radius: 50px;
-          margin-right: 10px;
-        }
-        input {
-          width: 73%;
-          padding-left: 10px;
-          background-color: $lightergray;
-          border-top: $border;
-          border-left: $border;
-          border-bottom: $border;
-          border-top-left-radius: 20px;
-          border-bottom-left-radius: 20px;
-          height: 40px;
-        }
-        img:hover {
-          cursor: pointer;
-        }
-        .commentTags {
+        .addComment {
+          margin: 10px 10px;
+          width: 100%;
           display: flex;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
-          border-top: $border;
-          border-bottom: $border;
-          border-right: $border;
           align-items: center;
-          background-color: $lightergray;
-          height: 40px;
           img {
-            border-radius: 0;
-            height: 20px;
+            height: 45px;
+            border-radius: 50px;
+            margin-right: 10px;
+          }
+          input {
+            width: 65%;
+            padding-left: 10px;
+            background-color: $lightergray;
+            border-top: $border;
+            border-left: $border;
+            border-bottom: $border;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 40px;
+          }
+          img:hover {
+            cursor: pointer;
+          }
+          .commentTags {
+            display: flex;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top: $border;
+            border-bottom: $border;
+            border-right: $border;
+            align-items: center;
+            background-color: $lightergray;
+            height: 40px;
+            img {
+              border-radius: 0;
+              height: 20px;
+            }
           }
         }
       }
       .extras {
-        width: 10%;
+        width: 30%;
+        margin-left: 20px;
+        margin-top: 10px;
+        .stories {
+          width: 100%;
+          height: 200px;
+          background-color: white;
+          border: $border;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: space-between;
+          .leftStories{
+            display: flex;
+            margin: 5px 10px;
+          }
+          .rightStories {
+            display: flex;
+            margin: 5px 10px;
+            p {
+              margin-left: 5px;
+            }
+          }
+        }
         .story {
-          margin-left: 20px;
           position: -webkit-sticky;
           position: sticky;
           top: 40px;
-          width: 301px;
+          width: 100%;
           height: 500px;
           background-color: pink;
         }
@@ -479,12 +501,17 @@ body {
     }
     .searchPeople {
       width: 100%;
-      .fa-search {
-        border-top: $border;
-        border-bottom: $border;
-      }
+      padding-left: 5px;
+      background-color: lightgray;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       input {
         border: none;
+        background: none;
+        width: 130px;
+      }
+      i:hover {
+        cursor: pointer;
       }
     }
   }
