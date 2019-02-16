@@ -71,6 +71,7 @@ body {
         background-color: $lightgray;
         img {
           height: 15px;
+          width: 15px;
           margin-bottom: 5px;
         }
       }
@@ -83,6 +84,8 @@ body {
       justify-content: space-around;
       align-items: center;
       @include bannerImg;
+      .profileID {
+      }
       p {
         color: white;
         padding-right: 10px;
@@ -103,6 +106,7 @@ body {
         }
         img {
           height: 30px;
+          height: 30px;
           border-radius: 15px;
         }
       }
@@ -111,21 +115,21 @@ body {
         padding-right: 10px;
         display: flex;
         margin-left: 10px;
-        img {
-          height: 25px;
+        i {
+          height: 30px;
           margin-left: 10px;
         }
-        img:hover {
+        i:hover {
           @include bannerHover;
         }
       }
       .help {
-        img {
+        i {
           height: 25px;
           margin-bottom: 3px;
           margin-left: 10px;
         }
-        img:hover {
+        i:hover {
           @include bannerHover;
         }
       }
@@ -135,14 +139,15 @@ body {
 
 .main {
   width: 100%;
-  margin-bottom: 200px;
   .innerMain {
     display: flex;
-    width: 83%;
+    width: 90%;
     margin: auto;
     .leftMenu {
-      width: 180px;
-      position: fixed;
+      width: 10%;
+      height: 100%;
+      position: -webkit-sticky;
+      position: sticky;
       top: 40px;
       padding-top: 20px;
       .name {
@@ -192,14 +197,15 @@ body {
     }
     .mainSection {
       display: flex;
-      justify-content: space-between;
-      width: 840px;
+      width: 90%;
       margin: auto;
+      margin-left: 20px;
       .makePost {
+        width: 60%;
         display: flex;
         flex-direction: column;
         .post {
-          width: 500px;
+          width: 100%;
           background-color: white;
           margin-top: 10px;
           border-radius: 5px;
@@ -256,16 +262,18 @@ body {
         }
       }
       .feed {
-        width: 500px;
+        width: 100%;
         border: $border;
         border-radius: 5px;
         background-color: white;
+        margin-bottom: 10px;
         .inputPost {
           display: flex;
           align-items: center;
           margin: 10px;
           img {
             height: 50px;
+            width: 50px;
             border-radius: 25px;
             margin-right: 10px;
           }
@@ -280,10 +288,11 @@ body {
         }
         .image {
           img {
-            width: 497px;
+            width: 100%;
+            border-right: $border;
             margin-top: 10px;
-            border-bottom: $border;
             border-top: $border;
+            border-bottom: $border;
           }
         }
         .likes {
@@ -298,10 +307,14 @@ body {
             align-items: center;
             img {
               height: 20px;
+              width: 20px;
             }
             .numberOfLikes {
               margin-left: 10px;
             }
+          }
+          .likeNumber:hover {
+            cursor: pointer;
           }
           .comment {
             display: flex;
@@ -337,6 +350,7 @@ body {
           .likeButton:hover {
             background-color: $lightgray;
             border-radius: 5px;
+            cursor: pointer;
           }
           .commentButton {
             width: 49%;
@@ -349,6 +363,7 @@ body {
           .commentButton:hover {
             background-color: $lightgray;
             border-radius: 5px;
+            cursor: pointer;
           }
         }
       }
@@ -361,6 +376,7 @@ body {
           margin: 10px 10px;
           img {
             height: 45px;
+            width: 45px;
             border-radius: 50px;
             margin-right: 10px;
           }
@@ -406,7 +422,7 @@ body {
           margin-right: 10px;
         }
         input {
-          width: 60%;
+          width: 73%;
           padding-left: 10px;
           background-color: $lightergray;
           border-top: $border;
@@ -416,13 +432,11 @@ body {
           border-bottom-left-radius: 20px;
           height: 40px;
         }
-        i {
-          margin-right: 5px;
-          margin-left: 8px;
+        img:hover {
+          cursor: pointer;
         }
         .commentTags {
           display: flex;
-          padding-right: 10px;
           border-top-right-radius: 20px;
           border-bottom-right-radius: 20px;
           border-top: $border;
@@ -431,14 +445,20 @@ body {
           align-items: center;
           background-color: $lightergray;
           height: 40px;
+          img {
+            border-radius: 0;
+            height: 20px;
+          }
         }
       }
-      .stories {
-        .storyFiller {
+      .extras {
+        width: 10%;
+        .story {
+          margin-left: 20px;
           position: -webkit-sticky;
           position: sticky;
           top: 40px;
-          width: 310px;
+          width: 301px;
           height: 500px;
           background-color: pink;
         }
@@ -446,12 +466,18 @@ body {
     }
   }
   .peopleOnline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15%;
+    position: fixed;
+    border: $border;
+    right: 0;
+    top: 40px;
+    height: 94%;
     .peopleFiller {
-      width: 205px;
-      height: 100%;
-      background-color: gray;
-      position: fixed;
-      right: 0;
+    }
+    .searchPeople {
     }
   }
 }
