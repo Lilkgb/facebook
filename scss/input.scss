@@ -645,3 +645,48 @@ body {
     }
   }
 }
+
+@media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+  .banner {
+    .sizeBanner {
+      .leftBanner {
+        input {
+          display: none;
+        }
+        button {
+            display: none;
+        }
+      }
+      .rightBanner {
+        .hover {
+          display: none;
+        }
+        .logos {
+          display: none;
+        }
+      }
+    }
+  }
+  .main {
+    width: 100%;
+    .innerMain {
+      width: 100%;
+      .leftMenu {
+        display: none;
+      }
+      .mainSection {
+        width: 100%;
+        .makePost {
+          width: 90%;
+          margin: auto;
+        }
+      }
+      .extras {
+        display: none;
+      }
+    }
+    .peopleOnline {
+      display: none;
+    }
+  }
+}

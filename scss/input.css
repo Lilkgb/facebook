@@ -638,4 +638,42 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+  .banner .sizeBanner .leftBanner input {
+    display: none;
+  }
+  .banner .sizeBanner .leftBanner button {
+    display: none;
+  }
+  .banner .sizeBanner .rightBanner .hover {
+    display: none;
+  }
+  .banner .sizeBanner .rightBanner .logos {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+  .main .innerMain {
+    width: 100%;
+  }
+  .main .innerMain .leftMenu {
+    display: none;
+  }
+  .main .innerMain .mainSection {
+    width: 100%;
+  }
+  .main .innerMain .mainSection .makePost {
+    width: 90%;
+    margin: auto;
+  }
+  .main .innerMain .extras {
+    display: none;
+  }
+  .main .peopleOnline {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=input.css.map */
