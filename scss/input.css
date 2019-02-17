@@ -600,7 +600,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 10px;
+  padding: 10px 10px;
 }
 .main .peopleOnline .whosOnline .online .user {
   display: flex;
@@ -615,6 +615,10 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 15px;
+}
+.main .peopleOnline .whosOnline .online:hover {
+  background-color: #e8eaeb;
+  cursor: pointer;
 }
 .main .peopleOnline .searchPeople {
   display: flex;
