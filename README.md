@@ -6,7 +6,12 @@
 
 ## Description
 
-_On this webpage I made my own facebook website clone. Looks like facebook but isn't. I incorperated SASS and css and html._
+_On this webpage I made my own Facebook website clone. Looks like Facebook but isn't. I incorporated SASS and css and html._
+
+_This is the original Facebook site_
+![Screenshot](img/original.JPG)
+_This is my clone of Facebook_
+![Screenshot](img/clone.JPG)
 
 ## Setup/Installation Requirements
 
