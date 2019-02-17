@@ -3,13 +3,11 @@ body {
 }
 
 .banner {
+  position: sticky;
+  top: 0px;
   width: 100%;
   background-color: #4267b2;
   height: 40px;
-  flex-wrap: wrap;
-  display: flex;
-  position: sticky;
-  top: 0px;
 }
 .banner .sizeBanner {
   display: flex;
@@ -128,7 +126,6 @@ body {
 .main .innerMain .leftMenu {
   width: 14%;
   height: 100%;
-  position: -webkit-sticky;
   position: sticky;
   top: 40px;
   padding-top: 20px;
