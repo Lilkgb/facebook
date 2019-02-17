@@ -575,15 +575,46 @@ body {
   margin: 10px 0px;
 }
 .main .peopleOnline {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 15%;
   position: fixed;
   border: 1px solid lightgray;
-  right: 0;
-  top: 40px;
-  height: 94%;
+  right: 0px;
+  top: 0px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .peopleOnline .usersOnline {
+  text-align: center;
+  text-decoration: underline;
+}
+.main .peopleOnline .whosOnline {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+.main .peopleOnline .whosOnline .online {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+.main .peopleOnline .whosOnline .online .user {
+  display: flex;
+}
+.main .peopleOnline .whosOnline .online .user img {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.main .peopleOnline .whosOnline .online .onlineStatus img {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
 }
 .main .peopleOnline .searchPeople {
   display: flex;

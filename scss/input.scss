@@ -580,16 +580,47 @@ body {
     }
   }
   .peopleOnline {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 15%;
     position: fixed;
     border: $border;
-    right: 0;
-    top: 40px;
-    height: 94%;
-    .peopleFiller {
+    right: 0px;
+    top: 0px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .usersOnline {
+      text-align: center;
+      text-decoration: underline;
+    }
+    .whosOnline {
+      width: 100%;
+      overflow: auto;
+      position: relative;
+      .online {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 10px;
+        .user {
+          display: flex;
+          img {
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            margin-right: 5px;
+          }
+        }
+        .onlineStatus {
+          img {
+            width: 10px;
+            height: 10px;
+            border-radius: 15px;
+          }
+        }
+      }
     }
     .searchPeople {
       display: flex;
