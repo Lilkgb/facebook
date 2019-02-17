@@ -455,22 +455,81 @@ body {
         .stories {
           width: 100%;
           height: 200px;
+          overflow: auto;
+          font-size: 13px;
           background-color: white;
           border: $border;
           border-radius: 5px;
           margin-bottom: 10px;
-          display: flex;
-          justify-content: space-between;
-          .leftStories{
+          .storyTitle {
             display: flex;
-            margin: 5px 10px;
-          }
-          .rightStories {
-            display: flex;
-            margin: 5px 10px;
-            p {
-              margin-left: 5px;
+            background-color: white;
+            top: 0;
+            width: 100%;
+            justify-content: space-between;
+            .leftStories{
+              display: flex;
+              margin: 5px 10px;
             }
+            .rightStories {
+              display: flex;
+              margin: 5px 10px;
+              p {
+                margin-left: 5px;
+                color: blue;
+              }
+              p:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
+            }
+          }
+          .peopleStories {
+            display: flex;
+            align-items: center;
+            overflow: auto;
+            .storyName {
+              font-size: 15px;
+              color: blue;
+              margin-bottom: 1px;
+            }
+            img {
+              height: 45px;
+              width: 45px;
+              margin: 5px 10px;
+              border-radius: 40px;
+            }
+            img:hover {
+              cursor: pointer;
+            }
+            .storyName:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+        .birthdays {
+          width: 100%;
+          background-color: white;
+          margin-bottom: 10px;
+          border: $border;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          i{
+            margin-left: 10px;
+          }
+          p {
+            margin-left: 5px;
+          }
+          .birthdayName {
+            font-size: 15px;
+            color: blue;
+            margin-bottom: 1px;
+          }
+          .birthdayName:hover {
+            cursor: pointer;
+            text-decoration: underline;
           }
         }
         .story {

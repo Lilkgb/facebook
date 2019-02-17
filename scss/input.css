@@ -453,23 +453,82 @@ body {
 .main .innerMain .mainSection .extras .stories {
   width: 100%;
   height: 200px;
+  overflow: auto;
+  font-size: 13px;
   background-color: white;
   border: 1px solid lightgray;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+.main .innerMain .mainSection .extras .stories .storyTitle {
   display: flex;
+  background-color: white;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
 }
-.main .innerMain .mainSection .extras .stories .leftStories {
+.main .innerMain .mainSection .extras .stories .storyTitle .leftStories {
   display: flex;
   margin: 5px 10px;
 }
-.main .innerMain .mainSection .extras .stories .rightStories {
+.main .innerMain .mainSection .extras .stories .storyTitle .rightStories {
   display: flex;
   margin: 5px 10px;
 }
-.main .innerMain .mainSection .extras .stories .rightStories p {
+.main .innerMain .mainSection .extras .stories .storyTitle .rightStories p {
   margin-left: 5px;
+  color: blue;
+}
+.main .innerMain .mainSection .extras .stories .storyTitle .rightStories p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main .innerMain .mainSection .extras .stories .peopleStories {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+.main .innerMain .mainSection .extras .stories .peopleStories .storyName {
+  font-size: 15px;
+  color: blue;
+  margin-bottom: 1px;
+}
+.main .innerMain .mainSection .extras .stories .peopleStories img {
+  height: 45px;
+  width: 45px;
+  margin: 5px 10px;
+  border-radius: 40px;
+}
+.main .innerMain .mainSection .extras .stories .peopleStories img:hover {
+  cursor: pointer;
+}
+.main .innerMain .mainSection .extras .stories .peopleStories .storyName:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main .innerMain .mainSection .extras .birthdays {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.main .innerMain .mainSection .extras .birthdays i {
+  margin-left: 10px;
+}
+.main .innerMain .mainSection .extras .birthdays p {
+  margin-left: 5px;
+}
+.main .innerMain .mainSection .extras .birthdays .birthdayName {
+  font-size: 15px;
+  color: blue;
+  margin-bottom: 1px;
+}
+.main .innerMain .mainSection .extras .birthdays .birthdayName:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .main .innerMain .mainSection .extras .story {
   position: -webkit-sticky;
