@@ -649,6 +649,8 @@ body {
 
 @media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
   .banner {
+    position:fixed;
+    top: 0px;
     .sizeBanner {
       .leftBanner {
         input {
