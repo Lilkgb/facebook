@@ -464,7 +464,6 @@ body {
           .storyTitle {
             display: flex;
             background-color: white;
-            top: 0;
             width: 100%;
             justify-content: space-between;
             .leftStories{
@@ -532,13 +531,50 @@ body {
             text-decoration: underline;
           }
         }
-        .story {
+        .sponsered {
           position: -webkit-sticky;
           position: sticky;
           top: 40px;
           width: 100%;
-          height: 500px;
-          background-color: pink;
+          background-color: white;
+          border: $border;
+          border-radius: 5px;
+          font-size: 13px;
+          .sponseredTitle {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .leftSponsered{
+              display: flex;
+              margin: 5px 10px;
+            }
+            .rightSponsered {
+              display: flex;
+              margin: 5px 10px;
+              p {
+                margin-left: 5px;
+                color: blue;
+              }
+              p:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
+            }
+          }
+          .sponserAdds {
+            width: 90%;
+            margin: auto;
+            a{
+              color: blue;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+            img {
+              width: 100%;
+              margin: 10px 0px;
+            }
+          }
         }
       }
     }
@@ -556,15 +592,20 @@ body {
     .peopleFiller {
     }
     .searchPeople {
+      display: flex;
+      align-items: center;
       width: 100%;
       padding-left: 5px;
       background-color: lightgray;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       input {
+        width: 60%;
         border: none;
         background: none;
-        width: 130px;
+      }
+      i {
+        margin-right: 5px;
       }
       i:hover {
         cursor: pointer;
